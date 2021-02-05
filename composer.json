@@ -1,0 +1,29 @@
+{
+    "name": "aldrumo-themes/aldrumo-com",
+    "description": "Theme for Aldrumo.com",
+    "type": "aldrumo-theme",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mike Barlow",
+            "email": "mike@mikebarlow.co.uk"
+        }
+    ],
+    "require": {
+        "php": "^7.3",
+        "aldrumo/theme-manager": "^0.1",
+        "owenvoke/blade-fontawesome": "^1.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "AldrumoThemes\\AldrumoCom\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "AldrumoThemes\\AldrumoCom\\AldrumoComServiceProvider"
+            ]
+        }
+    }
+}
