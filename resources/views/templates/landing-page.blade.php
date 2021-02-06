@@ -11,7 +11,7 @@
                     With Laravel &amp; Livewire at its core, and a simple, easy to use "What-You-See-Is-What-You-Get" editor on top. Aldrumo is a dream for both developers and end-users!
                 </x-Blocks::renderer>
             </p>
-            <div class="mb-4 space-x-0 md:space-x-2 md:mb-8">
+            <div class="mt-6 mb-4 space-x-0 md:space-x-2 md:mb-8">
                 <a href="#" class="inline-flex items-center justify-center w-full mb-2 sm:w-auto sm:mb-0 btn btn-primary btn-lg">
                     Get Started
                 </a>
@@ -20,9 +20,9 @@
                 </a>
             </div>
         </div>
-        <div class="w-full mx-auto mt-20 text-center md:w-10/12">
+        <div class="w-full mx-auto mt-10 text-center md:w-10/12">
             <x-Blocks::renderer key="hero-image">
-                <img src="/hero.jpg" alt="Hellonext feedback boards software screenshot" class="w-full rounded-lg shadow-2xl" />
+                <img src="/hero.jpg" alt="Hellonext feedback boards software screenshot" class="w-full rounded-lg" />
             </x-Blocks::renderer>
         </div>
     </section>
