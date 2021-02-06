@@ -2,10 +2,14 @@
     <section class="container px-4 py-14 mx-auto">
         <div class="w-full mx-auto text-left md:w-11/12 xl:w-9/12 md:text-center">
             <h1 class="mb-6 text-4xl font-extrabold leading-none tracking-normal text-gray-900 md:text-6xl md:tracking-tight">
-                A new TALL Stack CMS on the block!
+                <x-Blocks::renderer key="hero-title">
+                    A new TALL Stack CMS on the block!
+                </x-Blocks::renderer>
             </h1>
             <p class="px-0 mb-6 text-lg text-gray-600 md:text-xl lg:px-24">
-                With Laravel &amp; Livewire at its core, and a simple, easy to use "What-You-See-Is-What-You-Get" editor on top. Aldrumo is a dream for both developers and end-users!
+                <x-Blocks::renderer key="hero-body">
+                    With Laravel &amp; Livewire at its core, and a simple, easy to use "What-You-See-Is-What-You-Get" editor on top. Aldrumo is a dream for both developers and end-users!
+                </x-Blocks::renderer>
             </p>
             <div class="mb-4 space-x-0 md:space-x-2 md:mb-8">
                 <a href="#" class="inline-flex items-center justify-center w-full mb-2 sm:w-auto sm:mb-0 btn btn-primary btn-lg">
@@ -17,57 +21,52 @@
             </div>
         </div>
         <div class="w-full mx-auto mt-20 text-center md:w-10/12">
-            <img src="/hero.jpg" alt="Hellonext feedback boards software screenshot" class="w-full rounded-lg shadow-2xl" />
+            <x-Blocks::renderer key="hero-image">
+                <img src="/hero.jpg" alt="Hellonext feedback boards software screenshot" class="w-full rounded-lg shadow-2xl" />
+            </x-Blocks::renderer>
         </div>
     </section>
 
     <section class="bg-white shadow">
         <div class="container grid grid-cols-1 gap-20 px-4 py-14 mx-auto lg:px-16 xl:px-24 md:grid-cols-2 lg:grid-cols-3">
             <div>
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
-                     class="w-12 h-12 mb-4 text-green-600" aria-hidden="true">
-                    <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
-                            d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
-                    />
-                </svg>
-                <h3 class="mb-3 text-lg font-medium leading-tight text-gray-900">Free, Open Source</h3>
+                <x-fab-osi class="w-12 h-12 mb-4 text-green-600" />
+                <h3 class="mb-3 text-lg font-medium leading-tight text-gray-900">
+                    <x-Blocks::renderer key="feature-1-title">
+                        Free, Open Source
+                    </x-Blocks::renderer>
+                </h3>
                 <p class="text-base leading-relaxed text-gray-600">
-                    Aldrumo is and always will be free, and open source! The code base is available on our
-                    <a href="https://github.com/aldrumo" class="text-green-600 hover:text-green-700" target="_blank" rel="noopener">Github</a>.
+                    <x-Blocks::renderer key="feature-1-body">
+                        Aldrumo is and always will be free, and open source! The code base is available on our
+                        <a href="https://github.com/aldrumo" class="text-green-600 hover:text-green-700" target="_blank" rel="noopener">Github</a>.
+                    </x-Blocks::renderer>
                 </p>
             </div>
             <div>
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
-                     class="w-12 h-12 mb-4 text-green-600" aria-hidden="true">
-                    <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
-                            d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"
-                    />
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z" />
-                </svg>
-                <h3 class="mb-3 text-lg font-medium leading-tight text-gray-900">Laravel</h3>
+                <x-fab-laravel class="w-12 h-12 mb-4 text-green-600" />
+                <h3 class="mb-3 text-lg font-medium leading-tight text-gray-900">
+                    <x-Blocks::renderer key="feature-2-title">
+                        Laravel
+                    </x-Blocks::renderer>
+                </h3>
                 <p class="text-base leading-relaxed text-gray-600">
-                    Constructed as packages upon a default Laravel installation, Aldrumo allows you to utilize Laravel and your Laravel knowledge when building out your app.
+                    <x-Blocks::renderer key="feature-2-body">
+                        Constructed as packages upon a default Laravel installation, Aldrumo allows you to utilize Laravel and your Laravel knowledge when building out your app.
+                    </x-Blocks::renderer>
                 </p>
             </div>
             <div>
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
-                     class="w-12 h-12 mb-4 text-green-600" aria-hidden="true">
-                    <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
-                            d="M8 4H6a2 2 0 00-2 2v12a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-2m-4-1v8m0 0l3-3m-3 3L9 8m-5 5h2.586a1 1 0 01.707.293l2.414 2.414a1 1 0 00.707.293h3.172a1 1 0 00.707-.293l2.414-2.414a1 1 0 01.707-.293H20"
-                    />
-                </svg>
-                <h3 class="mb-3 text-lg font-medium leading-tight text-gray-900">WYSIWYG</h3>
+                <x-far-eye class="w-12 h-12 mb-4 text-green-600" />
+                <h3 class="mb-3 text-lg font-medium leading-tight text-gray-900">
+                    <x-Blocks::renderer key="feature-3-title">
+                        WYSIWYG
+                    </x-Blocks::renderer>
+                </h3>
                 <p class="text-base leading-relaxed text-gray-600">
-                    The "What-You-See-Is-What-You-Get" page editor with its Inline toolbar makes editing your content a breeze.
+                    <x-Blocks::renderer key="feature-3-body">
+                        The "What-You-See-Is-What-You-Get" page editor with its Inline toolbar makes editing your content a breeze.
+                    </x-Blocks::renderer>
                 </p>
             </div>
         </div>

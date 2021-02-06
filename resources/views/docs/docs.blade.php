@@ -1,4 +1,4 @@
-<x-AldrumoCom::doc-layout>
+<x-AldrumoCom::docs-layout>
     <h1>Hello World</h1>
     <p>Welcome to 2017! This post may seem obvious to most but it’s something that caught me out when recently dealing the DateTime class and DateTimeZone class.</p>
 
@@ -51,4 +51,4 @@
             </code></pre></div></div>
 
     <p>Obviously that’s a rough example but hopefully it conveys the idea and hopefully this post prevents someone else making the stupid mistake that I made!</p>
-</x-AldrumoCom::doc-layout>
+</x-AldrumoCom::docs-layout>
