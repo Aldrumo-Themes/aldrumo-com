@@ -13,7 +13,7 @@
                     </x-Blocks::renderer>
                 </p>
             </div>
-            <div class="w-full h-full py-48 bg-black">
+            <div class="w-full h-full bg-black shadow rounded">
                 <x-Blocks::renderer key="feature-1-image"></x-Blocks::renderer>
             </div>
         </div>
@@ -30,7 +30,7 @@
                     </x-Blocks::renderer>
                 </p>
             </div>
-            <div class="w-full h-full py-48 bg-black">
+            <div class="w-full h-full bg-black shadow rounded">
                 <x-Blocks::renderer key="feature-2-image"></x-Blocks::renderer>
             </div>
         </div>
