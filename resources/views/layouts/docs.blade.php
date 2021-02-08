@@ -58,7 +58,7 @@
 
                 <div class="w-full text-center mt-10">
                     <p class="w-full mb-8 text-sm text-center text-blue-950">
-                        &copy; Aldrumo 2021.<br>All Rights Reserved.
+                        &copy; Aldrumo {{ date('Y') }}.<br>All Rights Reserved.
                     </p>
 
                     <div class="flex justify-center">

@@ -30,7 +30,7 @@
                 <div class="flex items-center space-x-1">
                     <div class="hidden space-x-1 md:inline-flex text-blue-950">
                         <a href="/features" class="btn btn-sm hover:text-green-600">Features</a>
-                        <a href="#" class="btn btn-sm hover:text-green-600">Docs</a>
+                        <a href="/docs" class="btn btn-sm hover:text-green-600">Docs</a>
                         <a href="https://github.com/aldrumo" target="_blank" class="btn btn-sm hover:text-green-600">Github</a>
                         <a href="https://twitter.com/aldrumo" target="_blank" class="btn btn-sm hover:text-green-600">Twitter</a>
                     </div>
@@ -74,7 +74,7 @@
                                 <span class="sr-only">Close Menu</span>
                             </button>
                             <a href="/features" class="w-full btn hover:text-green-600">Features</a>
-                            <a href="#" class="w-full btn hover:text-green-600">Docs</a>
+                            <a href="/docs" class="w-full btn hover:text-green-600">Docs</a>
                             <a href="https://github.com/aldrumo" target="_blank" class="w-full btn hover:text-green-600">Github</a>
                             <a href="https://twitter.com/aldrumo" target="_blank" class="w-full btn hover:text-green-600">Twitter</a>
                         </div>
@@ -88,7 +88,7 @@
         <footer class="bg-white">
             <div class="container flex flex-col items-center justify-between px-4 py-12 mx-auto md:flex-row">
                 <p class="mb-8 text-sm text-center text-blue-950 md:text-left md:mb-0">
-                    &copy; Aldrumo 2021. All Rights Reserved.
+                    &copy; Aldrumo {{ date('Y') }}. All Rights Reserved.
                 </p>
                 <div class="flex items-center space-x-6">
                     <a href="https://twitter.com/aldrumo" target="_blank" class="text-twitter hover:text-twitter-dark">
