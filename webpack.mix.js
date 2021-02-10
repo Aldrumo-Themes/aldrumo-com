@@ -15,8 +15,15 @@ mix.postCss('resources/css/site.css', 'resources/dist/css', [
     require('postcss-import'),
     require('tailwindcss'),
     require('autoprefixer'),
+]).postCss('resources/css/docs.css', 'resources/dist/css', [
+    require('postcss-import'),
+    require('tailwindcss'),
+    require('autoprefixer'),
 ])
-.js('resources/js/site.js', 'resources/dist/js');
+.copy('resources/css/prism.css', 'resources/dist/css/prism.css')
+.copyDirectory('resources/img', 'resources/dist/img')
+.js('resources/js/site.js', 'resources/dist/js')
+.js('resources/js/docs.js', 'resources/dist/js');
 
 if (mix.inProduction()) {
     mix.version();

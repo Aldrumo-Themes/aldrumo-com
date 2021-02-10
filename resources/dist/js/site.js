@@ -494,6 +494,19 @@ __webpack_require__.r(__webpack_exports__);
 // extracted by mini-css-extract-plugin
 
 
+/***/ }),
+
+/***/ "./resources/css/docs.css":
+/*!********************************!*\
+  !*** ./resources/css/docs.css ***!
+  \********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
 /***/ })
 
 /******/ 	});
@@ -557,7 +570,8 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 		
 /******/ 		var deferredModules = [
 /******/ 			["./resources/js/site.js"],
-/******/ 			["./resources/css/site.css"]
+/******/ 			["./resources/css/site.css"],
+/******/ 			["./resources/css/docs.css"]
 /******/ 		];
 /******/ 		// no chunk on demand loading
 /******/ 		

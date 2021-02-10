@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link href="/aldrumo/aldrumo-com/css/site.css" rel="stylesheet">
 
-        <title>{{ !empty($page) ? $page->title : '' }}{{ config('app.name') }}</title>
+        <title>{{ !empty($page) && $page->title !== 'Home' ? $page->title . ' - ' : '' }}{{ config('app.name') }}</title>
     </head>
     <body class="bg-gray-200">
         <header class="z-30 w-full px-2 py-4 bg-white sm:px-4">
@@ -83,7 +83,7 @@
             </div>
         </header>
 
-        {{ $slot }}
+        @yield('content')
 
         <footer class="bg-white">
             <div class="container flex flex-col items-center justify-between px-4 py-12 mx-auto md:flex-row">

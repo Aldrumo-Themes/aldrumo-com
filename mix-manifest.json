@@ -1,4 +1,10 @@
 {
     "/resources/dist/js/site.js": "/resources/dist/js/site.js",
-    "/resources/dist/css/site.css": "/resources/dist/css/site.css"
+    "/resources/dist/js/docs.js": "/resources/dist/js/docs.js",
+    "/resources/dist/css/docs.css": "/resources/dist/css/docs.css",
+    "/resources/dist/css/site.css": "/resources/dist/css/site.css",
+    "/resources/dist/css/prism.css": "/resources/dist/css/prism.css",
+    "/resources/dist/img/exclamation-mark.svg": "/resources/dist/img/exclamation-mark.svg",
+    "/resources/dist/img/idea.svg": "/resources/dist/img/idea.svg",
+    "/resources/dist/img/play-button.svg": "/resources/dist/img/play-button.svg"
 }

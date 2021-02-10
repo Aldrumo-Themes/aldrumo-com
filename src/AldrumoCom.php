@@ -10,7 +10,6 @@ class AldrumoCom extends ThemeBase
     public function boot(): void
     {
         parent::boot();
-        Blade::componentNamespace('AldrumoThemes\\AldrumoCom\\View\\Components', 'AldrumoCom');
 
         $this->serviceProvider->setPublishes(
             [

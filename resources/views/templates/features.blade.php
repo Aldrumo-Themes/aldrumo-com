@@ -1,4 +1,6 @@
-<x-AldrumoCom::site-layout>
+@extends('AldrumoCom::layouts.site')
+
+@section('content')
     <section class="container px-4 py-24 mx-auto">
         <div class="grid items-center grid-cols-1 mb-24 md:grid-cols-2 gap-y-10 md:gap-y-32 gap-x-10 md:gap-x-24">
             <div>
@@ -83,4 +85,4 @@
             </x-Blocks::renderer>
         </div>
     </section>
-</x-AldrumoCom::site-layout>
+@endsection

@@ -17,12 +17,11 @@
 }
 
 .content blockquote {
-    @apply border-blue-400;
+    @apply border-yellow-500;
     @apply border-l-4;
     @apply font-normal;
     @apply italic;
     @apply my-8;
-    @apply pl-6;
     @apply text-gray-800;
     @apply text-lg;
 }

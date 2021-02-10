@@ -1,4 +1,6 @@
-<x-AldrumoCom::site-layout>
+@extends('AldrumoCom::layouts.site')
+
+@section('content')
     <section class="container px-4 py-14 mx-auto">
         <div class="w-full mx-auto text-left md:w-11/12 xl:w-9/12 md:text-center">
             <h1 class="mb-6 text-4xl font-extrabold leading-none tracking-normal text-gray-900 md:text-6xl md:tracking-tight">
@@ -147,4 +149,4 @@
             </div>
         </div>
     </section>
-</x-AldrumoCom::site-layout>
+@endsection

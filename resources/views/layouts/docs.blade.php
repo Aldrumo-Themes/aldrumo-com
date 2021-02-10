@@ -4,8 +4,10 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link href="/aldrumo/aldrumo-com/css/site.css" rel="stylesheet">
+        <link href="/aldrumo/aldrumo-com/css/docs.css" rel="stylesheet">
+        <link href="/aldrumo/aldrumo-com/css/prism.css" rel="stylesheet">
 
-        <title>{{ !empty($page) ? $page->title : '' }}{{ config('app.name') }}</title>
+        <title>{{ isset($title) ? $title . ' - ' : null }}{{ config('app.name') }}</title>
     </head>
     <body class="bg-gray-200">
         <section class="min-h-screen" x-data="{ sideBar: false }">
@@ -25,36 +27,9 @@
                         <path d="M384.791 571.37C384.791 564.349 386.639 557.451 390.15 551.37L669.464 67.5842C676.609 55.2081 689.814 47.5842 704.105 47.5842L748.592 47.5842C770.684 47.5842 788.592 65.4928 788.592 87.5841L788.592 98.9784C788.592 106 786.744 112.898 783.233 118.978L503.919 602.764C496.774 615.14 483.569 622.764 469.278 622.764L424.791 622.764C402.7 622.764 384.791 604.856 384.791 582.764L384.791 571.37Z" fill="#059669" />
                     </svg>
                 </a>
-                <nav class="text-sm font-medium text-gray-600" aria-label="Main Navigation">
-                    <a class="flex items-center px-4 py-3 transition cursor-pointer group hover:bg-gray-100 hover:text-gray-900" href="#">
-                        <span>Home</span>
-                    </a>
-                    <a class="flex items-center px-4 py-3 transition cursor-pointer group hover:bg-gray-100 hover:text-gray-900" href="#">
-                        <span>Articles</span>
-                    </a>
-                    <a class="flex items-center px-4 py-3 text-gray-900 transition bg-gray-100 cursor-pointer group hover:bg-gray-100 hover:text-gray-900" href="#">
-                        <span>Collections</span>
-                    </a>
-                    <a class="flex items-center px-4 py-3 transition cursor-pointer group hover:bg-gray-100 hover:text-gray-900" href="#">
-                        <span>Checklists</span>
-                    </a>
-                    <a class="flex items-center px-4 py-3 transition cursor-pointer group hover:bg-gray-100 hover:text-gray-900 justify-between" href="#">
-                        <div class="flex items-center">
-                            <span>Integrations</span>
-                        </div>
-                    </a>
-                    <div class="mb-4">
-                        <a class="flex items-center py-2 pl-8 pr-4 transition cursor-pointer hover:bg-gray-100 hover:text-gray-900" href="#">Shopify</a>
-                        <a class="flex items-center py-2 pl-8 pr-4 transition cursor-pointer hover:bg-gray-100 hover:text-gray-900" href="#">Slack</a>
-                        <a class="flex items-center py-2 pl-8 pr-4 transition cursor-pointer hover:bg-gray-100 hover:text-gray-900" href="#">Zapier</a>
-                    </div>
-                    <a class="flex items-center px-4 py-3 transition cursor-pointer group hover:bg-gray-100 hover:text-gray-900" href="#">
-                        <span>Changelog</span>
-                    </a>
-                    <a class="flex items-center px-4 py-3 transition cursor-pointer group hover:bg-gray-100 hover:text-gray-900" href="#">
-                        <span>Settings</span>
-                    </a>
-                </nav>
+                <div class="docs_sidebar">
+                    {!! $index !!}
+                </div>
 
                 <div class="w-full text-center mt-10">
                     <p class="w-full mb-8 text-sm text-center text-blue-950">
@@ -87,8 +62,14 @@
                     </div>
                 </header>
 
-                <div class="content">
-                    {{ $slot }}
+                <div class="content docs_main">
+                    @yield('content')
+                </div>
+
+                <div class="hid den" id="js-top">
+                    <div class="fixed bottom-8 right-4 w-16 h-16 bg-green-600 rounded shadow cursor-pointer" title="Back to top" aria-label="Back to top">
+                        <x-heroicon-o-chevron-up class="w-14 text-blue-950 mx-auto mt-1" />
+                    </div>
                 </div>
             </div>
             <!-- Sidebar Backdrop -->
@@ -96,5 +77,6 @@
         </section>
 
         <script src="/aldrumo/aldrumo-com/js/site.js"></script>
+        <script src="/aldrumo/aldrumo-com/js/docs.js"></script>
     </body>
 </html>
