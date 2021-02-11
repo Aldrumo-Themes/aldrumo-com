@@ -1,0 +1,29 @@
+.content a {
+    @apply font-semibold;
+    @apply no-underline;
+    @apply text-green-600;
+}
+.content a:hover{
+    @apply text-green-800;
+}
+
+.content h1 a,
+.content h2 a,
+.content h3 a,
+.content h4 a,
+.content h5 a,
+.content h6 a {
+    @apply text-blue-950;
+    @apply text-black;
+}
+
+.content ul:first-of-type li a {
+    @apply font-bold;
+    @apply text-green-700;
+    @apply hover:text-green-800;
+}
+.content ul:first-of-type ul li a {
+    @apply font-normal;
+    @apply text-green-600;
+    @apply hover:text-green-700;
+}

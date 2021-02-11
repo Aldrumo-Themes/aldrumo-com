@@ -71,7 +71,7 @@
                     </div>
                 </header>
 
-                <div class="content docs_main">
+                <div class="content docs_main p-4">
                     @yield('content')
                 </div>
 

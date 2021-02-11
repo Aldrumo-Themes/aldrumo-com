@@ -1,0 +1,50 @@
+.content h1,
+.content h2,
+.content h3,
+.content h4,
+.content h5,
+.content  h6 {
+    @apply leading-tight;
+    @apply mb-4;
+    @apply mt-8;
+    @apply text-blue-950;
+}
+
+.content h1:first-child,
+.content h2:first-child,
+.content h3:first-child,
+.content h4:first-child,
+.content h5:first-child,
+.content h6:first-child {
+    @apply mt-0;
+}
+
+.content h1 {
+    @apply font-extrabold;
+    @apply text-5xl;
+}
+
+.content h2 {
+    @apply font-bold;
+    @apply text-4xl;
+}
+
+.content h3 {
+    @apply font-bold;
+    @apply text-3xl;
+}
+
+.content h4 {
+    @apply font-normal;
+    @apply text-2xl;
+}
+
+.content h5 {
+    @apply font-normal;
+    @apply text-xl;
+}
+
+.content h6 {
+    @apply font-light;
+    @apply text-lg;
+}

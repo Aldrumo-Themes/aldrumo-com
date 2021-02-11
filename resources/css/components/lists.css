@@ -1,0 +1,20 @@
+.content ul {  @apply list-disc text-lg list-outside ml-6; }
+.content ul li ul { @apply ml-6; }
+
+.content li ul,
+.content li ol {
+    @apply my-0;
+}
+
+.content ol,
+.content ul {
+    @apply my-4;
+}
+
+.content ol {
+    @apply list-decimal;
+}
+
+.content ul li {
+    @apply text-blue-950;
+}

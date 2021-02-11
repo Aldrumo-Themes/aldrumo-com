@@ -1,0 +1,26 @@
+.content table {
+    @apply w-auto;
+}
+
+.content table,
+.content table th,
+.content table td {
+    @apply border-collapse;
+    @apply border;
+    @apply border-blue-950;
+}
+.content table th {
+    @apply text-left;
+    @apply bg-gray-200;
+    @apply px-4;
+    @apply py-1;
+}
+.content table td {
+    @apply px-4;
+    @apply py-1;
+    @apply bg-white;
+}
+
+.content table tr:nth-child(even) td {
+    @apply bg-gray-100;
+}

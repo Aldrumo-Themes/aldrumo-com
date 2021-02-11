@@ -1,0 +1,13 @@
+.content p {
+    @apply my-2;
+    @apply leading-relaxed;
+}
+.content p:first-child {
+    @apply mt-0;
+}
+
+@screen md {
+    .content p {
+        @apply my-4;
+    }
+}

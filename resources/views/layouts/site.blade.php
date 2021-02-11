@@ -7,7 +7,7 @@
 
         @include('AldrumoCom::partials.og', [
             'title' => config('app.name') . (!empty($page) ? ' - ' . $page->title : ''),
-            'desc'  => strip_tags($contentBlocks->first()->content),
+            'desc'  => strip_tags($contentBlocks->first()->content ?? ''),
             'card'  => '/aldrumo/aldrumo-com/meta/card.png'
         ])
     </head>

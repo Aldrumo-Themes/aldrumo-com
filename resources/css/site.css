@@ -2,18 +2,14 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
-.content {
-    font-size: 17px;
-    @apply p-4;
-}
+@import 'components/headers';
+@import 'components/links';
+@import 'components/lists';
+@import 'components/tables';
+@import 'components/typography';
 
-.content a {
-    @apply font-semibold;
-    @apply no-underline;
-    @apply text-green-600;
-}
-.content a:hover{
-    @apply text-green-800;
+.content {
+    @apply text-lg;
 }
 
 .content blockquote {
@@ -27,88 +23,16 @@
 }
 
 .content pre {
-    @apply bg-white;
-    @apply leading-loose;
-    @apply my-6;
-    @apply overflow-x-auto;
-    @apply p-4;
     @apply rounded;
     @apply shadow;
-    @apply text-base;
 }
 .content pre code {
     @apply bg-transparent;
 }
 
 .content code {
-    @apply bg-gray-300;
     @apply rounded;
-    @apply text-sm;
-
     @apply p-0;
-}
-
-.content code.hljs {
-    @apply bg-transparent;
-    @apply p-0;
-}
-
-.content code.hljs .hljs-comment,
-.content code.hljs .hljs-keyword,
-.content code.hljs .hljs-meta {
-    @apply font-normal;
-    @apply not-italic;
-}
-
-.content h1,
-.content h2,
-.content h3,
-.content h4,
-.content h5,
-.content  h6 {
-    @apply leading-tight;
-    @apply mb-4;
-    @apply mt-8;
-    @apply text-blue-950;
-}
-
-.content h1:first-child,
-.content h2:first-child,
-.content h3:first-child,
-.content h4:first-child,
-.content h5:first-child,
-.content h6:first-child {
-    @apply mt-0;
-}
-
-.content h1 {
-    @apply font-extrabold;
-    @apply text-5xl;
-}
-
-.content h2 {
-    @apply font-bold;
-    @apply text-4xl;
-}
-
-.content h3 {
-    @apply font-bold;
-    @apply text-3xl;
-}
-
-.content h4 {
-    @apply font-normal;
-    @apply text-2xl;
-}
-
-.content h5 {
-    @apply font-normal;
-    @apply text-xl;
-}
-
-.content h6 {
-    @apply font-light;
-    @apply text-lg;
 }
 
 .content hr {
@@ -116,33 +40,6 @@
     @apply border-blue-200;
     @apply my-12;
     @apply rounded-full;
-}
-
-.content ul {  @apply list-disc text-lg list-outside ml-6; }
-.content ul li ul { @apply ml-6; }
-
-.content li ul,
-.content li ol {
-    @apply my-0;
-}
-
-.content ol,
-.content ul {
-    @apply my-4;
-}
-
-.content ol {
-    @apply list-decimal;
-}
-
-.content p {
-    @apply my-3;
-}
-
-@screen md {
-    .content p {
-        @apply my-6;
-    }
 }
 
 .content ::selection {
