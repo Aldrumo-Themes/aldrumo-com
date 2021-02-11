@@ -2,7 +2,7 @@ const defaultTheme = require('tailwindcss/defaultTheme');
 
 module.exports = {
     purge: [
-        './*.html'
+        './resources/views/**/*.php'
     ],
 
     theme: {

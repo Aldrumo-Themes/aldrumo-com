@@ -1,11 +1,15 @@
 <!doctype html>
 <html>
     <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link href="/aldrumo/aldrumo-com/css/site.css" rel="stylesheet">
+        @include('AldrumoCom::partials.head', [
+            'title' => (!empty($page) && $page->title !== 'Home' ? $page->title . ' - ' : '') . config('app.name')
+        ])
 
-        <title>{{ !empty($page) && $page->title !== 'Home' ? $page->title . ' - ' : '' }}{{ config('app.name') }}</title>
+        @include('AldrumoCom::partials.og', [
+            'title' => config('app.name') . (!empty($page) ? ' - ' . $page->title : ''),
+            'desc'  => strip_tags($contentBlocks->first()->content),
+            'card'  => '/aldrumo/aldrumo-com/meta/card.png'
+        ])
     </head>
     <body class="bg-gray-200">
         <header class="z-30 w-full px-2 py-4 bg-white sm:px-4">

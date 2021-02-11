@@ -1,13 +1,22 @@
 <!doctype html>
 <html>
     <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link href="/aldrumo/aldrumo-com/css/site.css" rel="stylesheet">
+        @include('AldrumoCom::partials.head', [
+            'title' => (isset($title) ? $title . ' - ' : null) . config('app.name')
+        ])
+
         <link href="/aldrumo/aldrumo-com/css/docs.css" rel="stylesheet">
         <link href="/aldrumo/aldrumo-com/css/prism.css" rel="stylesheet">
 
-        <title>{{ isset($title) ? $title . ' - ' : null }}{{ config('app.name') }}</title>
+        @include('AldrumoCom::partials.og', [
+            'title' => config('app.name') . (!empty($title) ? ' - ' . $title : ''),
+            'desc'  => "A new TALL Stack CMS on the block!",
+            'card'  => '/aldrumo/aldrumo-com/meta/card.png'
+        ])
+
+        @if (isset($canonical))
+            <link rel="canonical" href="{{ url($canonical) }}">
+        @endif
     </head>
     <body class="bg-gray-200">
         <section class="min-h-screen" x-data="{ sideBar: false }">
@@ -37,11 +46,11 @@
                     </p>
 
                     <div class="flex justify-center">
-                        <a href="#" class="text-twitter hover:text-twitter-dark mr-5">
+                        <a href="https://twitter.com/aldrumo" target="_blank" rel="noopener" class="text-twitter hover:text-twitter-dark mr-5">
                             <span class="sr-only">Twitter</span>
                             <x-fab-twitter class="w-5 h-5" />
                         </a>
-                        <a href="#" class="text-github hover:text-github-dark">
+                        <a href="https://github.com/aldrumo" target="_blank" rel="noopener" class="text-github hover:text-github-dark">
                             <span class="sr-only">Github</span>
                             <x-fab-github class="w-5 h-5" />
                         </a>
@@ -58,7 +67,7 @@
                     </button>
                     <div class="hidden -ml-3 form-icon md:block w-96">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
-                        <input class="border-0 form-input" placeholder="Search for articles..." />
+                        <input class="border-0 form-input" placeholder="Search coming soon" disabled />
                     </div>
                 </header>
 

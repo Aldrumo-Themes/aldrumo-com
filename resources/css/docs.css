@@ -98,3 +98,42 @@
 .docs_main table tr:nth-child(even) td {
     @apply bg-gray-100;
 }
+
+.docs_main .callout-wrapper {
+    @apply mb-10;
+    @apply max-w-2xl;
+    @apply bg-gray-50;
+    @apply p-4;
+    @apply shadow-lg;
+    @apply lg:flex;
+    @apply lg:items-center;
+}
+.docs_main .callout-wrapper .callout-para {
+    @apply lg:ml-6;
+    @apply p-0;
+}
+.docs_main .callout-wrapper .image-wrapper {
+    @apply w-20;
+    @apply h-20;
+    @apply mb-6;
+    @apply flex;
+    @apply items-center;
+    @apply justify-center;
+    @apply flex-shrink-0;
+    @apply lg:mb-0;
+}
+.docs_main .callout-wrapper .image-wrapper.exclaim {
+    @apply bg-red-600;
+}
+.docs_main .callout-wrapper .image-wrapper.tip {
+    @apply bg-green-600;
+}
+.docs_main .callout-wrapper .image-wrapper.video {
+    @apply bg-blue-950;
+}
+.docs_main .callout-wrapper .image-wrapper .callout-icon {
+    @apply opacity-75;
+    @apply stroke-current;
+    @apply text-white;
+    @apply w-12;
+}

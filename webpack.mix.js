@@ -11,17 +11,20 @@ const mix = require('laravel-mix');
  |
  */
 
-mix.postCss('resources/css/site.css', 'resources/dist/css', [
+mix.setPublicPath('./')
+.postCss('resources/css/site.css', 'resources/dist/css', [
     require('postcss-import'),
     require('tailwindcss'),
     require('autoprefixer'),
-]).postCss('resources/css/docs.css', 'resources/dist/css', [
+])
+.postCss('resources/css/docs.css', 'resources/dist/css', [
     require('postcss-import'),
     require('tailwindcss'),
     require('autoprefixer'),
 ])
 .copy('resources/css/prism.css', 'resources/dist/css/prism.css')
 .copyDirectory('resources/img', 'resources/dist/img')
+.copyDirectory('resources/meta', 'resources/dist/meta')
 .js('resources/js/site.js', 'resources/dist/js')
 .js('resources/js/docs.js', 'resources/dist/js');
 

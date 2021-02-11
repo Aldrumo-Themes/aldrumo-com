@@ -93,35 +93,34 @@ function replaceBlockquotesWithCalloutsInDocs() {
             switch (type) {
                 case "note":
                     img = '/aldrumo/aldrumo-com/img/exclamation-mark.svg';
-                    color = 'bg-red-600';
+                    color = 'exclaim';
                     break;
                 case "tip":
                     img = '/aldrumo/aldrumo-com/img/idea.svg';
-                    color = 'bg-green-600';
+                    color = 'tip';
                     break;
                 case "laracasts":
                 case "video":
                     img = '/aldrumo/aldrumo-com/img/play-button.svg';
-                    color = 'bg-blue-950';
+                    color = 'video';
                     break;
             }
 
             const wrapper = document.createElement('div');
-            wrapper.classList = 'mb-10 max-w-2xl bg-gray-50 px-4 py-4 shadow-lg lg:flex lg:items-center';
+            wrapper.classList = 'callout-wrapper callout';
 
             const imageWrapper = document.createElement('div');
-            imageWrapper.classList = `w-20 h-20 mb-6 flex items-center justify-center flex-shrink-0 ${color} lg:mb-0`;
+            imageWrapper.classList = `image-wrapper ${color}`;
             const image = document.createElement('img');
             image.src = img;
-            image.classList = `opacity-75 stroke-current text-white w-12`;
+            image.classList = `callout-icon`;
             imageWrapper.appendChild(image);
             wrapper.appendChild(imageWrapper);
 
             el.parentNode.insertBefore(wrapper, el);
 
             el.innerHTML = str.replace(/\{(.*?)\}/, '');
-            el.classList = 'mb-0 lg:ml-6 p-0';
-            wrapper.classList.add('callout');
+            el.classList = 'callout-para';
             wrapper.appendChild(el);
         }
     });

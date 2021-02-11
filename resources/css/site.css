@@ -146,6 +146,6 @@
 }
 
 .content ::selection {
-    @apply bg-blue-600;
+    @apply bg-green-600;
     @apply text-white;
 }
