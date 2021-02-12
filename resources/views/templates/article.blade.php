@@ -3,21 +3,16 @@
 @section('content')
     <section class="container px-4 py-8 mx-auto">
         <div class="w-full mx-auto text-left md:w-11/12 xl:w-9/12">
-            <h1 class="mb-4 text-4xl font-bold leading-tight text-gray-900 md:text-5xl">
+            <h1 class="text-4xl font-bold leading-tight text-gray-900 md:text-5xl">
                 <x-Blocks::renderer key="article-title">
                     Article Title
                 </x-Blocks::renderer>
             </h1>
-            <p class="text-base text-gray-500 md:text-lg">
-                <x-Blocks::renderer key="article-sub-title">
-                    Article Sub Title
-                </x-Blocks::renderer>
-            </p>
         </div>
     </section>
 
     <section class="bg-white shadow">
-        <div class="container px-4 py-10 mx-auto">
+        <div class="container px-4 pt-7 pb-5 mx-auto">
             <div class="w-full mx-auto text-left md:w-11/12 xl:w-9/12 content">
                 <x-Blocks::renderer key="article-body">
                     <p>

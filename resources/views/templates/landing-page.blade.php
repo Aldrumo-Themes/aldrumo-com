@@ -17,7 +17,7 @@
                 <a href="#" class="inline-flex items-center justify-center w-full mb-2 sm:w-auto sm:mb-0 btn btn-primary btn-lg">
                     Get Started
                 </a>
-                <a href="#" class="inline-flex items-center justify-center w-full mb-2 sm:w-auto sm:mb-0 btn btn-white btn-lg hover:bg-gray-100">
+                <a href="/demo" class="inline-flex items-center justify-center w-full mb-2 sm:w-auto sm:mb-0 btn btn-white btn-lg hover:bg-gray-100">
                     Try the Demo
                 </a>
             </div>

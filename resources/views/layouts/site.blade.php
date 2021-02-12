@@ -38,7 +38,7 @@
                         <a href="https://github.com/aldrumo" target="_blank" class="btn btn-sm hover:text-green-600">Github</a>
                         <a href="https://twitter.com/aldrumo" target="_blank" class="btn btn-sm hover:text-green-600">Twitter</a>
                     </div>
-                    <a href="#" class="btn btn-primary">Try the Demo</a>
+                    <a href="/demo" class="btn btn-primary">Try the Demo</a>
                     <div class="inline-flex md:hidden" x-data="{ open: false }">
                         <button class="flex-none px-2 btn btn-sm text-blue-950 hover:text-green-600" @click="open = true">
                             <svg

@@ -75,7 +75,7 @@
                     @yield('content')
                 </div>
 
-                <div class="hid den" id="js-top">
+                <div class="hidden" id="js-top">
                     <div class="fixed bottom-8 right-4 w-16 h-16 bg-green-600 rounded shadow cursor-pointer" title="Back to top" aria-label="Back to top">
                         <x-heroicon-o-chevron-up class="w-14 text-blue-950 mx-auto mt-1" />
                     </div>
