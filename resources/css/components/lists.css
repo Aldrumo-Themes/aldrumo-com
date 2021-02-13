@@ -1,4 +1,4 @@
-.content ul {  @apply list-disc text-lg list-outside ml-6; }
+.content ul {  @apply list-disc list-outside ml-6; }
 .content ul li ul { @apply ml-6; }
 
 .content li ul,

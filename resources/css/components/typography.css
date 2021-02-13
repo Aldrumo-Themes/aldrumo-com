@@ -8,6 +8,6 @@
 
 @screen md {
     .content p {
-        @apply my-4;
+        @apply my-3;
     }
 }
