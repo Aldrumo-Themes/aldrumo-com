@@ -14,7 +14,7 @@
                 </x-Blocks::renderer>
             </p>
             <div class="mt-6 mb-4 space-x-0 md:space-x-2 md:mb-8">
-                <a href="#" class="inline-flex items-center justify-center w-full mb-2 sm:w-auto sm:mb-0 btn btn-primary btn-lg">
+                <a href="/docs/0.x#installation" class="inline-flex items-center justify-center w-full mb-2 sm:w-auto sm:mb-0 btn btn-primary btn-lg">
                     Get Started
                 </a>
                 <a href="/demo" class="inline-flex items-center justify-center w-full mb-2 sm:w-auto sm:mb-0 btn btn-white btn-lg hover:bg-gray-100">
