@@ -11,7 +11,7 @@
     ],
     "require": {
         "php": "^7.3",
-        "aldrumo/theme-manager": "^0.1",
+        "aldrumo/theme-manager": "0.*",
         "owenvoke/blade-fontawesome": "^1.6"
     },
     "autoload": {
